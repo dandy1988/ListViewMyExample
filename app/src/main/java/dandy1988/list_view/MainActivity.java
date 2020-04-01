@@ -1,4 +1,4 @@
-package dandy1988.list_view;
+package dandy1988.list_view; //Не используйте подчеркивания в названиях пакетов! ПишитеКэмелКейсом.
 
 import androidx.appcompat.app.AppCompatActivity;
 
