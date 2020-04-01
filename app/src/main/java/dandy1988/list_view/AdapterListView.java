@@ -11,10 +11,11 @@ import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 
+// Названия создаются по схеме "ПрилагательноеСуществительное", т.е. правильно будет ListViewAdapter
 class AdapterListView extends BaseAdapter {
 
-    ArrayList<String> exampleArray = new ArrayList<>();
-    public ArrayList<Boolean> selections = new ArrayList<>();
+    ArrayList<String> exampleArray = new ArrayList<>(); //Сделать Private
+    public ArrayList<Boolean> selections = new ArrayList<>(); //Сделать Private
     private final int colorRed = Color.RED;
     private final int colorWhite = Color.WHITE;
 
@@ -67,7 +68,7 @@ class AdapterListView extends BaseAdapter {
             if ((selections.get(i) != null)&&(selections.get(i) == true)){
                 selections.remove(i);
                 exampleArray.remove(i);
-                i--;
+                i--; //Для чего эта операция?
             }
         }
     }
